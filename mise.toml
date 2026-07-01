@@ -14,20 +14,13 @@ rumdl = "latest"
 tombi = "latest"
 typos = "latest"
 zizmor = "latest"
+dotnet = "10"
+"dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool" = "2.8.15"
 
 [tools.rust]
 version = "1.96.0"
 components = "rust-analyzer"
 profile = "default"
-
-[tasks.generate-nodeset]
-description = "Generate the OPC-UA nodeset from TOML modelling files"
-usage = '''
-arg "<dir>" help="Target directory"
-'''
-run = "cargo run --release -- {{ usage.dir }}"
-tools.dotnet = "10"
-tools."dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool" = "2.8.15"
 
 [settings]
 minimum_release_age = "7d"

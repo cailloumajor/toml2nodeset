@@ -31,11 +31,13 @@ part set the same as the ModelDesign prefix described above.
 
 ### Invocation
 
-The tool is available through a [mise task](https://mise.jdx.dev/tasks/):
+The tool depends on the [UA Model Compiler](https://github.com/OPCFoundation/UA-ModelCompiler) tool. To ease its installation, it
+is recommended to use [mise](https://mise.jdx.dev/), for which a configuration is
+included in this project.
 
 ```ShellSession
-mise run generate-nodeset <DIRECTORY>
-````
+cargo run -- <TARGET_DIRECTORY>
+```
 
-The `DIRECTORY` argument is the path to the directory containing the TOML design
-files, and where generated files will be written.
+The `TARGET_DIRECTORY` argument is the path to the directory containing the TOML
+design files, and where generated files will be written.
