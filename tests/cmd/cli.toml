@@ -3,4 +3,3 @@
 bin.name = "toml2nodeset"
 args = ["testns/testmodel"]
 status = "success"
-env.inherit = false
