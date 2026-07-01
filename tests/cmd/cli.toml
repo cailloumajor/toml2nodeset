@@ -1,0 +1,6 @@
+#:schema https://github.com/assert-rs/snapbox/raw/refs/heads/main/crates/trycmd/schema.json
+
+bin.name = "toml2nodeset"
+args = ["testns/testmodel"]
+status = "success"
+env.inherit = false

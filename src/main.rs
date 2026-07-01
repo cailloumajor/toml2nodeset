@@ -3,7 +3,7 @@ use std::fs::File;
 use std::path::PathBuf;
 use std::{env, fs};
 
-use anyhow::Context as _;
+use anyhow::{Context as _, anyhow};
 use askama::Template;
 use duct::cmd;
 use glob::glob;
@@ -72,21 +72,26 @@ fn main() -> anyhow::Result<()> {
         .context("Failed to read the version file")?;
 
     // Get an iterator over TOML design files.
-    let toml_glob = glob(target_dir.join("*.toml").to_string_lossy().as_ref())
-        .context("Failed to create TOML files glob")?;
+    let toml_paths = glob(target_dir.join("*.toml").to_string_lossy().as_ref())
+        .context("Failed to create TOML files glob")?
+        .collect::<Result<Vec<_>, _>>()
+        .context("Failed to get TOML file glob entry")?;
+
+    if toml_paths.is_empty() {
+        return Err(anyhow!("No TOML file was found"));
+    }
 
     // Get ObjectType structures from TOML files.
-    let mut object_types = Vec::new();
-    for entry in toml_glob {
-        let entry_path = entry.context("Failed to get TOML files glob entry")?;
-
-        let input_file_contents = fs::read_to_string(&entry_path)
-            .with_context(|| format!("Failed to read {}", entry_path.display()))?;
-        let object_type: ObjectType = toml::from_str(&input_file_contents)
-            .with_context(|| format!("Failed to deserialize {}", entry_path.display()))?;
-
-        object_types.push(object_type);
-    }
+    let object_types = toml_paths
+        .into_iter()
+        .map(|toml_path| {
+            let input_file_contents = fs::read_to_string(&toml_path)
+                .with_context(|| format!("Failed to read {}", toml_path.display()))?;
+            let object_type: ObjectType = toml::from_str(&input_file_contents)
+                .with_context(|| format!("Failed to deserialize {}", toml_path.display()))?;
+            Ok(object_type)
+        })
+        .collect::<Result<Vec<_>, anyhow::Error>>()?;
 
     let ns_urn = UrnBuilder::new(ns_urn_nid, model_name)
         .build()

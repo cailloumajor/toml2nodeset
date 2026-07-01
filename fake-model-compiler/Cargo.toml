@@ -1,0 +1,6 @@
+[package]
+name = "fake-model-compiler"
+version = "0.0.0"
+edition.workspace = true
+description = "Fake UA model compiler to be used in tests"
+publish.workspace = true

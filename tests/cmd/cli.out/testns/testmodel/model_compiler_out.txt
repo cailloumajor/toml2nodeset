@@ -1,0 +1,4 @@
+mode: compile
+design file: testns/testmodel/testmodelModel.xml
+identifier file: testns/testmodel/testmodelModel.csv
+version: 12.99.45

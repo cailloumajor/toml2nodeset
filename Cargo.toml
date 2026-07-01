@@ -1,8 +1,16 @@
 [package]
 name = "toml2nodeset"
 version = "1.0.0"
-edition = "2024"
+edition.workspace = true
 description = "Turn TOML description of OPC-UA model to nodeset files"
+publish.workspace = true
+
+[workspace]
+members = ["fake-model-compiler"]
+
+[workspace.package]
+edition = "2024"
+publish = false
 
 [dependencies]
 anyhow = "1.0.103"
@@ -12,3 +20,7 @@ glob = "0.3.3"
 serde = { version = "1.0.228", features = ["derive"] }
 toml = "1.1.2"
 urn = "0.7.0"
+
+[dev-dependencies]
+escargot = "0.5.15"
+trycmd = "1.2.0"
