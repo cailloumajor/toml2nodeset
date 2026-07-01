@@ -8,6 +8,11 @@ representation.
 
 ## Usage
 
+### Version file
+
+The version of the generated nodeset will be taken from a `version.txt` file in
+the provided directory.
+
 ### TOML design files
 
 The source format is one TOML file for each ObjectType to be created. The JSON schema

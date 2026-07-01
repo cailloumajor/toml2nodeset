@@ -5,3 +5,10 @@ edition = "2024"
 description = "Turn TOML description of OPC-UA model to nodeset files"
 
 [dependencies]
+anyhow = "1.0.103"
+askama = "0.16.0"
+duct = "1.1.1"
+glob = "0.3.3"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "1.1.2"
+urn = "0.7.0"
