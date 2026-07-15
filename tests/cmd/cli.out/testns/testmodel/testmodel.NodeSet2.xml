@@ -70,7 +70,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=1002" BrowseName="1:BeltSpeed" ParentNodeId="ns=1;i=1001" DataType="Double">
+  <UAVariable NodeId="ns=1;i=1002" BrowseName="1:BeltSpeed" ParentNodeId="ns=1;i=1001" DataType="Double" AccessLevel="3">
     <DisplayName>BeltSpeed</DisplayName>
     <Description>Belt linear speed in m/s</Description>
     <References>
@@ -107,7 +107,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=1006" BrowseName="1:Speed" ParentNodeId="ns=1;i=1005" DataType="Double">
+  <UAVariable NodeId="ns=1;i=1006" BrowseName="1:Speed" ParentNodeId="ns=1;i=1005" DataType="Double" AccessLevel="2">
     <DisplayName>Speed</DisplayName>
     <Description>Motor speed in rpm</Description>
     <References>
@@ -125,7 +125,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1005</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=1008" BrowseName="1:AlarmCodes" ParentNodeId="ns=1;i=1005" DataType="Int32" ValueRank="1" ArrayDimensions="10">
+  <UAVariable NodeId="ns=1;i=1008" BrowseName="1:AlarmCodes" ParentNodeId="ns=1;i=1005" DataType="Int32" ValueRank="1" ArrayDimensions="10" AccessLevel="3">
     <DisplayName>AlarmCodes</DisplayName>
     <Description>Active alarm codes</Description>
     <References>

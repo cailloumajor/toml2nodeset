@@ -26,6 +26,15 @@
     "variable"
   ],
   "$defs": {
+    "AccessLevel": {
+      "description": "The access level of the variable.\n\nThis is a subset of [available levels].\n\n[available levels]: https://reference.opcfoundation.org/specs/OPC-10000-3/8.57",
+      "type": "string",
+      "enum": [
+        "Read",
+        "Write",
+        "ReadWrite"
+      ]
+    },
     "ScalarDataType": {
       "description": "OPC-UA scalar datatypes that can be used for variables. The set of types has been chosen arbitrarily.",
       "type": "string",
@@ -52,6 +61,10 @@
       "description": "Represents the modelization for a variable member of an ObjectType.",
       "type": "object",
       "properties": {
+        "access_level": {
+          "description": "The access level of the variable.",
+          "$ref": "#/$defs/AccessLevel"
+        },
         "array_dimensions": {
           "description": "A list of [array dimensions] for the variable.\n\n[array dimensions]: https://reference.opcfoundation.org/specs/OPC-10000-6/5.2.5",
           "type": [
@@ -80,7 +93,8 @@
       "required": [
         "name",
         "description",
-        "data_type"
+        "data_type",
+        "access_level"
       ]
     }
   }

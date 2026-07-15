@@ -20,7 +20,7 @@
     <opc:Description>{{ object_type.description }}</opc:Description>
     <opc:Children>
 {%- for var in object_type.variable %}
-      <opc:Property SymbolicName="{{ var.name }}" DataType="ua:{{ var.data_type }}" {# Keep the trailing space #}
+      <opc:Property SymbolicName="{{ var.name }}" DataType="ua:{{ var.data_type }}" AccessLevel="{{ var.access_level }}" {# Keep the trailing space #}
         {%- if let Some(dimensions) = var.array_dimensions -%}
           ValueRank="Array" ArrayDimensions="{{ dimensions | join(',') }}"
         {%- endif -%}
