@@ -1,8 +1,4 @@
 [[language]]
-name = "json"
-language-servers = ["biome"]
-
-[[language]]
 name = "markdown"
 auto-format = true
 language-servers = ["marksman", "rumdl", "mpls"]
@@ -11,10 +7,6 @@ formatter = { command = "rumdl", args = ["check", "--fix", "--stdin"] }
 [[language]]
 name = "pkl"
 auto-format = true
-
-[language-server.biome]
-command = "biome"
-args = ["lsp-proxy"]
 
 [language-server.mpls]
 command = "mpls"

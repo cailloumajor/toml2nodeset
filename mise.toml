@@ -1,12 +1,10 @@
 [tools]
 actionlint = "latest"
 betterleaks = "latest"
-biome = "latest"
 editorconfig-checker = "latest"
 ghalint = "latest"
 "github:mhersson/mpls" = "latest"
 hk = "latest"
-jsonschema = "latest"
 marksman = "latest"
 pinact = "latest"
 pkl = "latest"
