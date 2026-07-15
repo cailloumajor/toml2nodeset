@@ -19,6 +19,14 @@ The source format is one TOML file for each ObjectType to be created. The JSON s
 from [this link](https://raw.githubusercontent.com/cailloumajor/toml2nodeset/refs/heads/main/schema/opc-object-type.schema.json)
 can be used to help editing those files.
 
+#### Schema generation
+
+To generate the JSON schema, the following command can be used.
+
+```ShellSession
+cargo generate-schema > <SCHEMA_FILE>
+```
+
 ### Output
 
 The tool will generate a Model Design file, with a name prefixed after the final
