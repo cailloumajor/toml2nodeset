@@ -8,10 +8,9 @@ local linters = new Mapping<String, Step> {
   ["cargo-fmt"] = Builtins.cargo_fmt
   ["editorconfig-checker"] = Builtins.editorconfig_checker
   ["ghalint"] = Builtins.ghalint_workflow
-  ["jsonschema"] {
-    glob = "**/*.schema.json"
-    check = "jsonschema lint {{ files }}"
-    fix = "jsonschema lint {{ files }} --fix"
+  ["json-schema"] {
+    check_diff = "diff schema/opc-object-type.schema.json <(cargo generate-schema)"
+    shell = "bash -o errexit -c"
   }
   ["mise"] = Builtins.mise
   ["pinact"] = Builtins.pinact

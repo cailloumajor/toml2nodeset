@@ -7,34 +7,8 @@ use anyhow::{Context as _, anyhow};
 use askama::Template;
 use duct::cmd;
 use glob::glob;
-use serde::Deserialize;
+use toml2nodeset::ObjectType;
 use urn::{Urn, UrnBuilder};
-
-/// Represents an OPC-UA ObjectType.
-#[derive(Deserialize)]
-struct ObjectType {
-    /// The name of the ObjectType (e.g. MotorType).
-    name: String,
-    /// The description of the ObjectType.
-    description: String,
-    /// The list of variables found in the ObjectDesign modelization.
-    variable: Vec<Variable>,
-}
-
-/// Represents the modelization for a variable member of an ObjectType.
-#[derive(Deserialize)]
-struct Variable {
-    /// The name of the variable.
-    name: String,
-    /// The description of the variable.
-    description: String,
-    /// The OPC-UA data type of the variable.
-    data_type: String,
-    /// A list of [array dimensions] for the variable.
-    ///
-    /// [array dimensions]: https://reference.opcfoundation.org/specs/OPC-10000-6/5.2.5
-    array_dimensions: Option<Vec<i32>>,
-}
 
 /// Represents the template for generating ModelDesign file.
 #[derive(Template)]
