@@ -22,6 +22,8 @@ pub struct Variable {
     pub description: String,
     /// The OPC-UA data type of the variable.
     pub data_type: ScalarDataType,
+    /// The access level of the variable.
+    pub access_level: AccessLevel,
     /// A list of [array dimensions] for the variable.
     ///
     /// [array dimensions]: https://reference.opcfoundation.org/specs/OPC-10000-6/5.2.5
@@ -48,4 +50,16 @@ pub enum ScalarDataType {
     Guid,
     ByteString,
     LocalizedText,
+}
+
+/// The access level of the variable.
+///
+/// This is a subset of [available levels].
+///
+/// [available levels]: https://reference.opcfoundation.org/specs/OPC-10000-3/8.57
+#[derive(Deserialize, Display, JsonSchema)]
+pub enum AccessLevel {
+    Read,
+    Write,
+    ReadWrite,
 }
