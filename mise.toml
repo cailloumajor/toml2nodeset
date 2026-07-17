@@ -14,11 +14,7 @@ typos = "latest"
 zizmor = "latest"
 dotnet = "10"
 "dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool" = "2.8.15"
-
-[tools.rust]
-version = "1.96.1"
-components = "rust-analyzer"
-profile = "default"
+rust = { version = "1.97.1", components = "rust-analyzer", profile = "default" }
 
 [settings]
 minimum_release_age = "7d"
