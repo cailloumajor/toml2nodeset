@@ -15,6 +15,7 @@ zizmor = "latest"
 dotnet = "10"
 "dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool" = "2.8.15"
 rust = { version = "1.97.1", components = "rust-analyzer", profile = "default" }
+biome = "latest"
 
 [settings]
 minimum_release_age = "7d"

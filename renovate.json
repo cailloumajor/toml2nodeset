@@ -1,25 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "helpers:pinGitHubActionDigestsToSemver"
-  ],
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigestsToSemver"],
   "semanticCommits": "enabled",
   "minimumReleaseAge": "7 days",
   "packageRules": [
     {
-      "matchPackageNames": [
-        "rust"
-      ],
-      "matchManagers": [
-        "mise"
-      ],
+      "matchPackageNames": ["rust"],
+      "matchManagers": ["mise"],
       "semanticCommitType": "fix"
     },
     {
-      "matchDepTypes": [
-        "dev-dependencies"
-      ],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "matchDepTypes": ["dev-dependencies"],
       "automerge": true,
       "automergeType": "branch"
     }
