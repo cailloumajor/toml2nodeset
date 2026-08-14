@@ -10,7 +10,7 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": ["dependencies", "workspace.dependencies"],
       "matchUpdateTypes": ["patch"],
       "automerge": true,
       "automergeType": "branch"
