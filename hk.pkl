@@ -28,7 +28,7 @@ env {
   ["CARGO_BUILD_WARNINGS"] = "deny"
 }
 
-exclude = List("CHANGELOG.md", "tests/cmd/*.out/**")
+exclude = List("CHANGELOG.md", "schema/*.schema.json", "tests/cmd/*.out/**")
 
 hooks {
   ["commit-msg"] {
