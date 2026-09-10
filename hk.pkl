@@ -14,7 +14,6 @@ local linters = new Mapping<String, Step> {
     check_diff = "diff schema/opc-object-type.schema.json <(cargo generate-schema)"
     shell = "bash -o errexit -c"
   }
-  ["mise"] = Builtins.mise
   ["pinact"] = Builtins.pinact
   ["pkl"] = Builtins.pkl
   ["pkl-format"] = Builtins.pkl_format

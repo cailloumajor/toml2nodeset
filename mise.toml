@@ -1,6 +1,9 @@
-[tools]
+[tools]  # tombi: format.rules.table-keys-order = "ascending"
 actionlint = "latest"
 betterleaks = "latest"
+biome = "latest"
+dotnet = "10"
+"dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool" = "2.8.15"
 editorconfig-checker = "latest"
 ghalint = "latest"
 "github:mhersson/mpls" = "latest"
@@ -9,13 +12,10 @@ marksman = "latest"
 pinact = "latest"
 pkl = "latest"
 rumdl = "latest"
+rust = { version = "1.98.0", components = "rust-analyzer", profile = "default" }
 tombi = "latest"
 typos = "latest"
 zizmor = "latest"
-dotnet = "10"
-"dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool" = "2.8.15"
-rust = { version = "1.98.0", components = "rust-analyzer", profile = "default" }
-biome = "latest"
 
 [hooks]
 enter = "mise outdated --local --silent"
