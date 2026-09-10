@@ -85,9 +85,18 @@ fn main() -> anyhow::Result<()> {
         .write_into(&mut model_design_file)
         .context("Failed to write Model Design file")?;
 
+    // Ensure model compiler tool availability.
+    let restore_command = cmd!("dotnet", "tool", "restore");
+    restore_command
+        .run()
+        .context("Failed to run `dotnet tool restore`")?;
+
     // Compile the Model Design.
     let identifier_filename = format!("{model_name}Model.csv");
     let compile_command = cmd!(
+        "dotnet",
+        "tool",
+        "run",
         "Opc.Ua.ModelCompiler",
         "compile",
         // Path to the ModelDesign file.
