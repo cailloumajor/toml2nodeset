@@ -504,9 +504,9 @@ url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/551300435"
 provenance = "github-attestations"
 
 [[tools.rust]]
-version = "1.97.1"
+version = "1.98.0"
 backend = "core:rust"
-specifiers = ["1.97.1"]
+specifiers = ["1.98.0"]
 
 [tools.rust.options]
 components = "rust-analyzer"
