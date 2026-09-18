@@ -97,61 +97,56 @@ url_api = "https://api.github.com/repos/betterleaks/betterleaks/releases/assets/
 provenance = "cosign"
 
 [[tools.biome]]
-version = "2.5.13"
+version = "2.5.14"
 backend = "aqua:biomejs/biome"
 specifiers = ["latest"]
 
 [tools.biome."platforms.linux-arm64"]
-checksum = "sha256:c5f0cf249b1ef1d730376ef61390341e4fdcdb2f79a7fe94a2dacd6af6241958"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-linux-arm64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847321"
+checksum = "sha256:50ac7f598985e21b15da57e5d87da0f7ab0c163e6f78eb6d4690309827d77ef8"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-arm64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471272"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-arm64-musl"]
-checksum = "sha256:41ea15898cb3da3fcc90388671ac88c197f80c4ff681cff56a1cdd5433266524"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-linux-arm64-musl"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847322"
+checksum = "sha256:e97669c6e998e4a160c71bd97757eae21fe8c8cb58a044311096779cd1d00454"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-arm64-musl"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471270"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-x64"]
-checksum = "sha256:2037af3d666febdb6e1a2f549938d6f0fe961bad0ac1a34c5fee3dec2db0b43e"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-linux-x64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847323"
+checksum = "sha256:290c1c85deeaf01310d9187306060b53961574856a7e34f59d9662562e6f19fe"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-x64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471264"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-x64-musl"]
-checksum = "sha256:bcf687baae8fcb2e15e1dff8dc2557a98295d26debfb1e353a2cdb01f63a9e62"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-linux-x64-musl"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847316"
+checksum = "sha256:d15a39b256ca1294fe8f8817f9162f7c26229ca0cb8bd19d0369540c1a01d781"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-x64-musl"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471265"
 provenance = "github-attestations"
 
 [tools.biome."platforms.macos-arm64"]
-checksum = "sha256:3d0cff7e4cd35a1709c1f4f9568380e08b3551ecf6e7356b3a49a40e3611894b"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-darwin-arm64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847319"
+checksum = "sha256:3d1194d0a7b720315fb6f8cbafeb5b18ca7100c3e635e8ce82ef46b315de9c0e"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-darwin-arm64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471268"
 provenance = "github-attestations"
 
 [tools.biome."platforms.macos-x64"]
-checksum = "sha256:16f162b37f5bfca9d203dd8a05b20a3aaa6fee806f6ae0e1f8792331a6072238"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-darwin-x64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847324"
+checksum = "sha256:b331448d7afb592cc4674e9bd6905eae5e79f5dd9b34b61b44803a6b7a91b801"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-darwin-x64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471271"
 provenance = "github-attestations"
 
 [tools.biome."platforms.windows-x64"]
-checksum = "sha256:3d7ce7840c4b47db771f258bd2258eecdae820a4bad376b9740af5bb9bb4d75d"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.13/biome-win32-x64.exe"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/554847315"
+checksum = "sha256:bef8f088617c8364314f55dffdc7b8ddabe12fee9e1e71f45f708a7027579280"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-win32-x64.exe"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471269"
 provenance = "github-attestations"
 
 [[tools.dotnet]]
 version = "10.0.401"
 backend = "core:dotnet"
 specifiers = ["10"]
-
-[[tools."dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool"]]
-version = "2.8.15"
-backend = "dotnet:OPCFoundation.Opc.Ua.ModelCompiler.Tool"
-specifiers = ["2.8.15"]
 
 [[tools.editorconfig-checker]]
 version = "4.0.1"
@@ -295,38 +290,38 @@ url = "https://github.com/mhersson/mpls/releases/download/v0.22.0/mpls_0.22.0_wi
 url_api = "https://api.github.com/repos/mhersson/mpls/releases/assets/502754092"
 
 [[tools.hk]]
-version = "2.0.0"
+version = "2.0.1"
 backend = "packslip:github.com/jdx/hk"
 specifiers = ["latest"]
 
 [tools.hk."platforms.linux-arm64"]
-checksum = "sha256:1034ac9e07d7ffc18b58c72c6fe1013bd1e6ab1d8fa421bc4f4ac68ee08cb011"
-url = "https://github.com/jdx/hk/releases/download/v2.0.0/hk-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:8a28f2737914bbffa8dd16f39a2fc65d85e9a52261789cf6a1affd6c6762fbc1"
+url = "https://github.com/jdx/hk/releases/download/v2.0.1/hk-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/hk/.github/workflows/release.yml"
 
 [tools.hk."platforms.linux-arm64-musl"]
-checksum = "sha256:494b4e1c6be73b44cffcead07a97681ec3f1ea72df05a6fbba5a2bfae3648604"
-url = "https://github.com/jdx/hk/releases/download/v2.0.0/hk-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b75f54bf8a3679a13a01d250959ae77fab033ca5025eb557b76442c59efa8eb8"
+url = "https://github.com/jdx/hk/releases/download/v2.0.1/hk-aarch64-unknown-linux-musl.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/hk/.github/workflows/release.yml"
 
 [tools.hk."platforms.linux-x64"]
-checksum = "sha256:d2cdde7a68dba648b2d25605ceab364074a057fb93618b46ce7ac3e298bfba2c"
-url = "https://github.com/jdx/hk/releases/download/v2.0.0/hk-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:f14d0290a07f82911f32ea5e4a91dd80d90abb852488912b1ade9b240f70d615"
+url = "https://github.com/jdx/hk/releases/download/v2.0.1/hk-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/hk/.github/workflows/release.yml"
 
 [tools.hk."platforms.linux-x64-musl"]
-checksum = "sha256:8faf654847d8cc7432012d4b1277ae91b4bca78275f87776f0381aee26d7920d"
-url = "https://github.com/jdx/hk/releases/download/v2.0.0/hk-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:76269248e27114f361d533551ffca757e58a1d4abe880fd008df16d19128ea97"
+url = "https://github.com/jdx/hk/releases/download/v2.0.1/hk-x86_64-unknown-linux-musl.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/hk/.github/workflows/release.yml"
 
 [tools.hk."platforms.macos-arm64"]
-checksum = "sha256:9ee3f4350b321677e5ce291882c6441b153773b32705734d2208f93ac71ce12f"
-url = "https://github.com/jdx/hk/releases/download/v2.0.0/hk-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:6ec393f898f562f76c4839a910356b4afec6740eff23f18ebdf8cf41c793a461"
+url = "https://github.com/jdx/hk/releases/download/v2.0.1/hk-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/hk/.github/workflows/release.yml"
 
 [tools.hk."platforms.windows-x64"]
-checksum = "sha256:81fca45c5e7697fdc114080f2fc1ea229bb053b4201a7f4e15e62d1a68820a65"
-url = "https://github.com/jdx/hk/releases/download/v2.0.0/hk-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:b3cb8ab5958393faacefabfb3a402060eb256b1fda8e1f83c74c3fc877ebff8f"
+url = "https://github.com/jdx/hk/releases/download/v2.0.1/hk-x86_64-pc-windows-msvc.zip"
 signer = "sigstore-oidc:https://github.com/jdx/hk/.github/workflows/release.yml"
 
 [[tools.marksman]]
@@ -600,49 +595,55 @@ url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/5593134
 provenance = "github-attestations"
 
 [[tools.typos]]
-version = "1.50.1"
+version = "1.50.2"
 backend = "aqua:crate-ci/typos"
 specifiers = ["latest"]
 
 [tools.typos."platforms.linux-arm64"]
-checksum = "sha256:a48feb58c517977ca953e634507c72819d64df8717c33ced3e43868d174fd39e"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539857357"
+checksum = "sha256:27c4b6d0ba6f37d120ce32117777d703fc9d57ba71f16e8bcde5b35c987cf9b8"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565799446"
 
 [tools.typos."platforms.linux-arm64-musl"]
-checksum = "sha256:a48feb58c517977ca953e634507c72819d64df8717c33ced3e43868d174fd39e"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539857357"
+checksum = "sha256:27c4b6d0ba6f37d120ce32117777d703fc9d57ba71f16e8bcde5b35c987cf9b8"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565799446"
 
 [tools.typos."platforms.linux-x64"]
-checksum = "sha256:edf0545109aee6a22751d04ddecb97c45be47d3aa0409564fb895eeeace91b1e"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539858793"
+checksum = "sha256:abcb3e257c7c2abeff4d903f7fe68071357637605bdb283ce2251f44bc70dc09"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565795694"
 
 [tools.typos."platforms.linux-x64-musl"]
-checksum = "sha256:edf0545109aee6a22751d04ddecb97c45be47d3aa0409564fb895eeeace91b1e"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539858793"
+checksum = "sha256:abcb3e257c7c2abeff4d903f7fe68071357637605bdb283ce2251f44bc70dc09"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565795694"
 
 [tools.typos."platforms.macos-arm64"]
-checksum = "sha256:2c940734b44b6e199e165278b662b7e17c68f068471a2a8a5e491ce635414ae6"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539861019"
+checksum = "sha256:70d61e9d682034133f0aa56f5a02bae0de168495f3cce62a87054aa7186c1901"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565802016"
 
 [tools.typos."platforms.macos-x64"]
-checksum = "sha256:b31ccf2f21154b2bc8d2a84f395f746106edda0feec4817fbecdb12216df53bd"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539861041"
+checksum = "sha256:7480a081e51d428d94f560ef8b855ae0decb7c35cc686925ed887c5f51b1ecf1"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565800683"
 
 [tools.typos."platforms.windows-x64"]
-checksum = "sha256:8740867a0d9e44a62f0803e37a669ec3c6cd17ab63cd49d00e14a96d3e03ccc3"
-url = "https://github.com/crate-ci/typos/releases/download/v1.50.1/typos-v1.50.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/539862554"
+checksum = "sha256:8474ca8bd72df497b7dee2272345bdea0d4926b18b708faea492fc9bcfd0b0e9"
+url = "https://github.com/crate-ci/typos/releases/download/v1.50.2/typos-v1.50.2-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/565798642"
 
 [[tools.zizmor]]
 version = "1.30.1"
 backend = "aqua:zizmorcore/zizmor"
 specifiers = ["latest"]
+
+[tools.zizmor."platforms.linux-arm64"]
+checksum = "sha256:7ff1dce33bdd18fd2a4affe63bdd47efcccca97b2cec1c1863ec26e9e2647540"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067643"
+provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-arm64-musl"]
 provenance = "github-attestations"
